@@ -1,4 +1,6 @@
 defmodule Teller.Schema.AccountDetail do
+  @moduledoc false
+
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -9,7 +11,7 @@ defmodule Teller.Schema.AccountDetail do
     field :bacs, :string
     field :wire, :string
 
-    belongs_to :accounts, Teller.Account, foreign_key: :account_id, type: Ecto.UUID
+    belongs_to :accounts, Teller.Schema.Account, foreign_key: :account_id, type: Ecto.UUID
 
     timestamps()
   end

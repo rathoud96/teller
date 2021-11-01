@@ -1,4 +1,8 @@
 defmodule Teller.AccountDetails do
+  @moduledoc """
+  Wrapper around AccountDetail Schema for DB operations
+  """
+
   alias Teller.Schema.AccountDetail
   alias Teller.Repo
 

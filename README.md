@@ -27,8 +27,8 @@ Generate API_KEY
   * Teller.Encryption.encrypt("your_test")
 
 Note:-
-  * To get the secret either user `/enroll` API or encrypt the `username` from `enrollments` table
-  
+  * To get the API_KEY either user `/enroll` API or encrypt the `username` from `enrollments` table
+
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more

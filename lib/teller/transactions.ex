@@ -1,4 +1,8 @@
 defmodule Teller.Transactions do
+  @moduledoc """
+  Wrapper around Transaction Schema for DB operations
+  """
+
   import Ecto.Query
   alias Teller.Schema.Transaction
   alias Teller.Repo

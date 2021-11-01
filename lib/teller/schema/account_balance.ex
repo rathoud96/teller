@@ -1,4 +1,6 @@
 defmodule Teller.Schema.AccountBalance do
+  @moduledoc false
+
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -7,7 +9,7 @@ defmodule Teller.Schema.AccountBalance do
     field :available, :string
     field :ledger, :string
 
-    belongs_to :accounts, Teller.Account, foreign_key: :account_id, type: Ecto.UUID
+    belongs_to :accounts, Teller.Schema.Account, foreign_key: :account_id, type: Ecto.UUID
 
     timestamps()
   end

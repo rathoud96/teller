@@ -1,4 +1,6 @@
 defmodule Teller.Schema.Transaction do
+  @moduledoc false
+
   use Ecto.Schema
   import Ecto.Changeset
 

@@ -1,4 +1,7 @@
 defmodule Teller.Encryption do
+  @moduledoc """
+  This module contain function to create API tokens
+  """
   @block_size Application.get_env(:teller, __MODULE__)[:block_size]
 
   @secret_key Application.get_env(:teller, __MODULE__)[:secret_key]
